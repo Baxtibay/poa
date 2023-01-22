@@ -21,6 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
     person[idx2] = temp
   }
 
+  randomBtn.addEventListener('click', () => {
+    location.reload()
+  })
+
   itemEl.style.display = 'none'
   for(let i = 0; i < 100; i++) {
     /* Bul kartinkani random qilip shig'arip beriw ushin
