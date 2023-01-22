@@ -12,17 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
   ]
 
   // random
-  randomBtn.addEventListener('click', () => {
-    for(let k = 0; k < 100; k++) {
-      const idx1 = Math.floor(Math.random() * person.length)
-      const idx2 = Math.floor(Math.random() * person.length)
+  for(let k = 0; k < 100; k++) {
+    const idx1 = Math.floor(Math.random() * person.length)
+    const idx2 = Math.floor(Math.random() * person.length)
 
-      const temp = person[idx1];
-      person[idx1] = person[idx2];
-      person[idx2] = temp
-    }
-    // alert('basildi')
-  })
+    const temp = person[idx1];
+    person[idx1] = person[idx2];
+    person[idx2] = temp
+  }
 
   itemEl.style.display = 'none'
   for(let i = 0; i < 100; i++) {
