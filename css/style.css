@@ -29,6 +29,25 @@ img {
   height: auto;
 }
 
+.random-btn {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0e9dea;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.random-btn:hover {
+  opacity: 0.8;
+}
+
+.random-btn:active {
+  opacity: 0.6;
+}
+
 
 /* CONTAINER  */
 .container {
