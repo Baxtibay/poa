@@ -11,81 +11,49 @@ document.addEventListener('DOMContentLoaded', () => {
     '84', '85', '86', '87', '88', '89', '90', '91', '92', '93','94','95','96', '97', '98', '99',
   ]
 
-  // random
-  for(let k = 0; k < 100; k++) {
-    const idx1 = Math.floor(Math.random() * person.length)
-    const idx2 = Math.floor(Math.random() * person.length)
-
-    const temp = person[idx1];
-    person[idx1] = person[idx2];
-    person[idx2] = temp
-  }
-
-  randomBtn.addEventListener('click', () => {
-    location.reload()
-  })
-
-  itemEl.style.display = 'none'
-  for(let i = 0; i < 100; i++) {
-    /* Bul kartinkani random qilip shig'arip beriw ushin
-    let imgNumber = Math.floor((Math.random()*6)+1)
-    */
-
-    // item
-    const item = document.createElement('li')
-    item.classList.add('card-item')
-    listEl.append(item)
-    // item.style.border = '1px solid blue'
-
+  // ----- CODE FOR GENERATOR CARDS START ----
+  person.forEach((item) => {
+    // li
+    const li = document.createElement('li')
+    li.classList.add('card-item')
 
     // card
-    const cardTest = document.createElement('div')
-    cardTest.classList.add('card')
-    item.append(cardTest)
+    const card = document.createElement('div')
+    card.classList.add('card')
+    li.append(card)
 
-
-    // front
-    const front = document.createElement('div')
-    front.classList.add('front')
-    cardTest.append(front)
-    front.innerHTML = `
-      <img class="front-img" src="../img/person/${person[i]}.png" width="100" height="100">
-    `
-
-
-    // back
-    const backD = document.createElement('div')
-    backD.classList.add('back')
-    cardTest.append(backD)
-    backD.innerHTML = `${person[i]}`;
+    card.innerHTML = `
+      <div class="front">
+        <img class="front-img" src="img/person/${item}.png" alt="" width="100" height="100">
+      </div>
+      <div class="back">${item}</div>
+    `;
+    listEl.append(li)
 
     // click
-    item.addEventListener('click', () => {
-      console.log('basildi')
-      if(!cardTest.classList.contains('card-item-rotate')) {
-        cardTest.classList.add('card-item-rotate')
-        cardTest.classList.remove('card')
+    card.addEventListener('click', () => {
+      if(!card.classList.contains('card-item-rotate')) {
+        card.classList.add('card-item-rotate')
+        card.classList.remove('card')
       } else {
-        cardTest.classList.remove('card-item-rotate')
-        cardTest.classList.add('card')
+        card.classList.remove('card-item-rotate')
+        card.classList.add('card')
       }
     })
-  }
+  });
+  // ----- CODE FOR GENERATOR CARDS END ----
 
+  // for random
+  // for(let k = 0; k < 100; k++) {
+  //   const idx1 = Math.floor(Math.random() * person.length)
+  //   const idx2 = Math.floor(Math.random() * person.length)
+
+  //   const temp = person[idx1];
+  //   person[idx1] = person[idx2];
+  //   person[idx2] = temp
+  // }
+
+  // randomBtn.addEventListener('click', () => {
+  //   location.reload()
+  // })
 })
-
-
-
-
-/* Bul kartinka random qiliw ushin test
-function generator() {
-  for(i = 0; i < 10; i++) {
-    let x = Math.floor((Math.random() * 6));
-    console.log(x)
-
-    document.getElementById('divImage').innerHTML += `
-      <img src="../img/person/person${x}.png" style="width: 100px;" alt="person">
-    `;
-  }
-}
-*/
