@@ -161,10 +161,12 @@ img {
   width: 100%;
   height: 100%;
   font-size: 40px;
+  font-weight: bold;
   backface-visibility: hidden;
   border-radius: 50%;
   transform: rotateY(180deg);
+  color: yellow;
   background-color: #fff;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 4px ridge yellow;
 }
