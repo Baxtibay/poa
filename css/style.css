@@ -165,7 +165,7 @@ img {
   backface-visibility: hidden;
   border-radius: 50%;
   transform: rotateY(180deg);
-  color: yellow;
+  color: lightgreen;
   background-color: #fff;
   cursor: pointer;
   border: 4px ridge yellow;
