@@ -1,4 +1,8 @@
 /* GLOBAL */
+:root {
+  --brend-color: #03a9f4;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -59,7 +63,52 @@ img {
   margin-right: auto;
 }
 
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+
+/* BUTTON */
+.person-button {
+  border: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 18px;
+  background-color: var(--brend-color);
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.person-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* :hover */
+.person-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 5px 12px #000;
+}
+
+/* :active */
+.person-button:active {
+  opacity: 0.6;
+}
+
+.person-button:focus {
+  outline: 2px dotted var(--brend-color);
+  outline-offset: 3px;
+}
+
+.active {
+  opacity: 0.8;
+  box-shadow: 0 5px 12px #000;
+}
 
 
 /* MAIN-CONTENT */
@@ -91,13 +140,13 @@ img {
 }
 
 .card-item:hover {
-  outline: 1px dashed #000;
+  outline: 1px dashed var(--brend-color);
   outline-offset: 4px;
   opacity: 0.8;
 }
 
 .card-item:active {
-  outline: 1px dashed #000;
+  outline: 1px dashed var(--brend-color);
   outline-offset: 0;
   opacity: 0.6;
 }
@@ -165,7 +214,7 @@ img {
   backface-visibility: hidden;
   border-radius: 50%;
   transform: rotateY(180deg);
-  color: lightgreen;
+  color: var(--brend-color);
   background-color: #fff;
   cursor: pointer;
   border: 4px ridge yellow;
