@@ -131,6 +131,7 @@ img {
 }
 
 .card-item {
+  margin-bottom: 10px;
   position: relative;
   width: 100px;
   height: 100px;
@@ -154,7 +155,6 @@ img {
 
 .card-item:not(:last-child) {
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 /* .card-item:hover .card {
