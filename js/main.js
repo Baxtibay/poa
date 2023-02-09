@@ -3,6 +3,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const sectionPoa = document.querySelector('.poa');
   const ul = document.querySelector('.card-list');
   const poaButtons = document.querySelectorAll('.person-button');
+  const refreshBtn = document.querySelector('.refresh-button');
+
+  refreshBtn.addEventListener('click', () => {
+    location.reload()
+  })
 
   // Attach ul in section
   sectionPoa.append(ul)
