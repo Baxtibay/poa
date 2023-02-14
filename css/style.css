@@ -260,3 +260,51 @@ img {
   cursor: pointer;
   border: 4px ridge yellow;
 }
+
+
+/* RANDOM */
+.action {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+}
+.circle {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--brend-color);
+  color: var(--brend-color);
+  border-radius: 50%;
+}
+.number {
+  font-size: 40px;
+  line-height: 28px;
+  font-weight: bold;
+}
+.random {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--brend-color);
+  color: #fff;
+  outline-offset: 0;
+  transition: outline 0.2s ease;
+}
+
+.random:hover {
+  outline: 1px dashed var(--brend-color);
+  outline-offset: 2px;
+  opacity: 0.8;
+}
+
+.random:active {
+  opacity: 0.6;
+}

@@ -1,9 +1,11 @@
 window.addEventListener('DOMContentLoaded', () => {
   // Generate from HTML
-  const sectionPoa = document.querySelector('.poa');
-  const ul = document.querySelector('.card-list');
-  const poaButtons = document.querySelectorAll('.person-button');
-  const refreshBtn = document.querySelector('.refresh-button');
+  const sectionPoa = document.querySelector('.poa'),
+    ul = document.querySelector('.card-list'),
+    poaButtons = document.querySelectorAll('.person-button'),
+    refreshBtn = document.querySelector('.refresh-button'),
+    numberAction = document.querySelector('.number'),
+    randomNumber = document.querySelector('.random');
 
   refreshBtn.addEventListener('click', () => {
     location.reload()
@@ -348,51 +350,14 @@ window.addEventListener('DOMContentLoaded', () => {
     })
   }
 
+  //  RANDOM NUMBER
+  const randomizeNumber = () => {
+    // console.log(Math.floor(Math.random() * 99))
+    return Math.floor(Math.random() * 99)
+  }
+  randomizeNumber()
+
+  randomNumber.addEventListener('click', () => {
+    numberAction.innerText = randomizeNumber()
+  })
 })
-
-// ===================-------------------- ORIGINAL code ----------------=================== //
-// // Card Generator Function front
-// const cardGenerator = () => {
-//   const personData = getPerson()
-//   // Generate the HTML
-//   personData.forEach((item) => {
-//     const li = document.createElement('li')
-//     const card = document.createElement('div')
-//     const front = document.createElement('div')
-//     const frontImg = document.createElement('img')
-//     const back = document.createElement('div')
-//     const backImg = document.createElement('img')
-//     li.classList = 'card-item'
-//     card.classList = 'card'
-//     front.classList = 'front'
-//     frontImg.classList = 'front-img'
-//     back.classList = 'back'
-//     backImg.classList = 'back-img'
-//     // Attach the info to the section
-//     frontImg.src = `../img/person/${item.imgSrc}`
-//     // card.setAttribute('name', item.name)
-//     card.innerText = item.name
-//     // Attach the cards to the section
-//     ul.append(li)
-//     li.append(card)
-//     card.append(front)
-//     front.append(frontImg)
-//     card.append(back)
-//     back.append(backImg)
-//     backImg.src = `../img/object/${item.imgSrc}`
-
-//     li.addEventListener('click', (e) => {
-//       const clicked = e.target
-//       card.classList.toggle('toggle-card')
-//       if(front.classList.contains('front')) {
-//         front.classList.remove('front')
-//         front.classList.add('front-toggle')
-//       } else {
-//         front.classList.add('front')
-//         front.classList.remove('front-toggle')
-//       }
-//       // console.log(clicked)
-//     })
-//   })
-// }
-// cardGenerator()
