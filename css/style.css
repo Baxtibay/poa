@@ -135,6 +135,7 @@ img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  /* border: 1px solid #000; */
   transition: outline-offset 0.1s ease;
   perspective: 500px;
 }
@@ -155,6 +156,17 @@ img {
 
 .card-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.person-name {
+  position: absolute;
+  top: 40%;
+  left: -10%;
+  width: 50px;
+  text-align: center;
+  transform: rotate(-90deg);
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* .card-item:hover .card {
@@ -204,6 +216,7 @@ img {
   color: var(--brend-color)
 }
 
+
 /* CARD */
 .card {
   position: relative;
@@ -243,6 +256,12 @@ img {
   cursor: pointer;
 }
 
+.back-img {
+  width: 60%;
+  height: 60%;
+  border-radius: 0;
+}
+
 .back {
   display: flex;
   align-items: center;
@@ -271,6 +290,7 @@ img {
   align-items: center;
   font-size: 30px;
 }
+
 .circle {
   width: 150px;
   height: 150px;
@@ -283,11 +303,13 @@ img {
   color: var(--brend-color);
   border-radius: 50%;
 }
+
 .number {
   font-size: 40px;
   line-height: 28px;
   font-weight: bold;
 }
+
 .random {
   display: inline-block;
   padding: 10px 40px;
