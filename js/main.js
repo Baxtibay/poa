@@ -2,73 +2,150 @@ window.addEventListener('DOMContentLoaded', () => {
   // Generate from HTML
   const sectionPoa = document.querySelector('.poa'),
     ul = document.querySelector('.card-list'),
-    poaButtons = document.querySelectorAll('.person-button'),
-    refreshBtn = document.querySelector('.refresh-button'),
     numberAction = document.querySelector('.number'),
-    randomNumber = document.querySelector('.random');
+    randomNumber = document.querySelector('.random'),
+    buttons = document.querySelectorAll('.person-button');
 
-  refreshBtn.addEventListener('click', () => {
-    location.reload()
-  })
+
+  /* ----------========== GLOBAL OPTIMAL FUNCTIONS START ==========---------- */
+
+  // Remove elements
+  const remover = () => {
+    if(ul.children.length > 10) {
+      const li = document.querySelectorAll('.card-item')
+      li.forEach((item, index) => {
+        // console.log(item)
+        if(index <= 9) {
+          item.remove()
+          buttons.forEach(item => {
+            item.classList.remove('active')
+          })
+        }
+      })
+    }
+  }
+
+  // Card Generator Function OPTIMIZED
+  const cardGenerator = (person) => {
+    const personData = person()
+    // console.log(personData)
+    // Generate the HTML
+    personData.forEach((item) => {
+      const li = document.createElement('li')
+      const card = document.createElement('div')
+      const front = document.createElement('div')
+      const frontImg = document.createElement('img')
+      const back = document.createElement('div')
+      const backImg = document.createElement('img')
+      const personName = document.createElement('span')
+      li.classList = 'card-item'
+      personName.classList = 'person-name'
+      card.classList = 'card'
+      front.classList = 'front'
+      frontImg.classList = 'front-img'
+      back.classList = 'back'
+      backImg.classList = 'back-img'
+      // Attach the info to the section
+      personName.innerText = `${item.personName}`
+      frontImg.src = `../img/person/${item.imgSrc}`
+      // card.setAttribute('name', item.name)
+      card.innerText = item.name
+      // Attach the cards to the section
+      ul.append(li)
+      li.append(personName)
+      li.append(card)
+      card.append(front)
+      front.append(frontImg)
+      card.append(back)
+      back.append(backImg)
+      backImg.src = `../img/object/${item.imgSrc}`
+
+      li.addEventListener('click', (e) => {
+        // const clicked = e.target
+        card.classList.toggle('toggle-card')
+        if(front.classList.contains('front')) {
+          front.classList.remove('front')
+          front.classList.add('front-toggle')
+        } else {
+          front.classList.add('front')
+          front.classList.remove('front-toggle')
+        }
+        // console.log(clicked)
+      })
+    })
+  }
+
+  // Randomize
+  const randomize = () => {
+    const cardData = getData()
+    console.log(cardData)
+    cardData.sort(() => Math.random() - 0.5)
+    return cardData
+  }
+
+  /* ----------========== GLOBAL OPTIMAL FUNCTIONS END ==========---------- */
 
   // Attach ul in section
   sectionPoa.append(ul)
 
-  // Functions for button the click
-  poaButtons[0].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[0].classList.add('active')
-    cardGenerator(personZero)
-  })
-  poaButtons[1].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[1].classList.add('active')
-    cardGenerator(personOne)
-  })
-  poaButtons[2].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[2].classList.add('active')
-    cardGenerator(personTwo)
-  })
-  poaButtons[3].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[3].classList.add('active')
-    cardGenerator(personThree)
-  })
-  poaButtons[4].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[4].classList.add('active')
-    cardGenerator(personFour)
-  })
-  poaButtons[5].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[5].classList.add('active')
-    cardGenerator(personFive)
-  })
-  poaButtons[6].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[6].classList.add('active')
-    cardGenerator(personSix)
-  })
-  poaButtons[7].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[7].classList.add('active')
-    cardGenerator(personSeven)
-  })
-  poaButtons[8].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[8].classList.add('active')
-    cardGenerator(personEight)
-  })
-  poaButtons[9].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[10].classList.add('active')
-    cardGenerator(personNine)
-  })
-  poaButtons[10].addEventListener('click', () => {
-    // Card Generator Function
-    poaButtons[0].classList.add('active')
-    cardGenerator(personAll)
+  buttons.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      if(index === 0) {
+        cardGenerator(personZero)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 1) {
+        cardGenerator(personOne)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 2) {
+        cardGenerator(personTwo)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 3) {
+        cardGenerator(personThree)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 4) {
+        cardGenerator(personFour)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 5) {
+        cardGenerator(personFive)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 6) {
+        cardGenerator(personSix)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 7) {
+        cardGenerator(personSeven)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 8) {
+        cardGenerator(personEight)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 9) {
+        cardGenerator(personNine)
+        remover()
+        item.classList.add('active')
+      }
+      if(index === 10) {
+        cardGenerator(personAll)
+        remover()
+        item.classList.add('active')
+      }
+    })
   })
 
   // Generate All person Data
@@ -294,65 +371,6 @@ window.addEventListener('DOMContentLoaded', () => {
     {imgSrc: '98.png', name: '98', personName: 'Krok'},
     {imgSrc: '99.png', name: '99', personName: 'Bumerang'},
   ]
-  // Randomize
-  const randomize = () => {
-    const cardData = getData()
-    console.log(cardData)
-    cardData.sort(() => Math.random() - 0.5)
-    return cardData
-  }
-  // randomize()
-
-
-  // Card Generator Function OPTIMIZED
-  const cardGenerator = (person) => {
-    const personData = person()
-    // console.log(personData)
-    // Generate the HTML
-    personData.forEach((item) => {
-      const li = document.createElement('li')
-      const card = document.createElement('div')
-      const front = document.createElement('div')
-      const frontImg = document.createElement('img')
-      const back = document.createElement('div')
-      const backImg = document.createElement('img')
-      const personName = document.createElement('span')
-      li.classList = 'card-item'
-      personName.classList = 'person-name'
-      card.classList = 'card'
-      front.classList = 'front'
-      frontImg.classList = 'front-img'
-      back.classList = 'back'
-      backImg.classList = 'back-img'
-      // Attach the info to the section
-      personName.innerText = `${item.personName}`
-      frontImg.src = `../img/person/${item.imgSrc}`
-      // card.setAttribute('name', item.name)
-      card.innerText = item.name
-      // Attach the cards to the section
-      ul.append(li)
-      li.append(personName)
-      li.append(card)
-      card.append(front)
-      front.append(frontImg)
-      card.append(back)
-      back.append(backImg)
-      backImg.src = `../img/object/${item.imgSrc}`
-
-      li.addEventListener('click', (e) => {
-        // const clicked = e.target
-        card.classList.toggle('toggle-card')
-        if(front.classList.contains('front')) {
-          front.classList.remove('front')
-          front.classList.add('front-toggle')
-        } else {
-          front.classList.add('front')
-          front.classList.remove('front-toggle')
-        }
-        // console.log(clicked)
-      })
-    })
-  }
 
   //  RANDOM NUMBER
   const randomizeNumber = () => {
