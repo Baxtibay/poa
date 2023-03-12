@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POA</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-container container">
+      <a class="site-logo" href="#">
+        <img class="site-header-logo" src="img/Logo.jpg" alt="Site logo" width="80" height="60">
+      </a>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">POA</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Location</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Test</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Number And Person</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Person And Action</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">5 Minut Numbers</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="site-header-theme-toogler" type="button">
+        <span class="site-header-theme-toogler-inner">
+          <svg class="site-header-theme-toogler-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path
+            fill="#fff"
+            fill-rule="evenodd"
+            stroke="currentColor"
+            stroke-width="1.25"
+            d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z"
+            clip-rule="evenodd"
+          /></svg>
+          <span class="site-header-theme-toogler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <div class="buttons">
+        <button class="person-button">00 to 09</button>
+        <button class="person-button">10 to 19</button>
+        <button class="person-button">20 to 29</button>
+        <button class="person-button">30 to 39</button>
+        <button class="person-button">40 to 49</button>
+        <button class="person-button">50 to 59</button>
+        <button class="person-button">60 to 69</button>
+        <button class="person-button">70 to 79</button>
+        <button class="person-button">80 to 89</button>
+        <button class="person-button">90 to 99</button>
+        <button class="person-button">All cards</button>
+      </div>
+      <section class="poa">
+        <h1 class="poa-title">My POA system</h1>
+        <ul class="card-list">
+          <!-- <li class="card-item">
+            <div class="card">00
+              <div class="front">
+                <img class="front-img" src="img/person/00.png" alt="" width="100" height="100">
+              </div>
+              <div class="back">
+                <img class="front-img" src="img/object/00.png" alt="" width="100" height="100">
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+      <section class="action">
+        <div class="circle">
+          <div class="number">00</div>
+        </div>
+        <button class="random">Random</button>
+      </section>
+    </div>
+  </div>
+
+
+  <script src="js/toggler.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
