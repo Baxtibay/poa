@@ -191,9 +191,11 @@ img {
   white-space: nowrap;
 }
 .site-header-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .site-header-logo:hover {
@@ -562,4 +564,21 @@ img {
 }
 .character-card-name {
   font-weight: bold;
+}
+
+/* RESPONSE */
+@media screen and (max-width: 800px) {
+  .site-header-theme-toogler {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  .site-logo {
+    margin-bottom: 20px;
+  }
+
+  .categoriy-list {
+    justify-content: center;
+  }
 }
