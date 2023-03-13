@@ -2,8 +2,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Generate from HTML
   const sectionPoa = document.querySelector('.poa'),
     ul = document.querySelector('.card-list'),
-    numberAction = document.querySelector('.number'),
-    randomNumber = document.querySelector('.random'),
     buttons = document.querySelectorAll('.person-button');
 
 
@@ -372,14 +370,5 @@ window.addEventListener('DOMContentLoaded', () => {
     {imgSrc: '99.png', name: '99', personName: 'Bumerang'},
   ]
 
-  //  RANDOM NUMBER
-  const randomizeNumber = () => {
-    // console.log(Math.floor(Math.random() * 99))
-    return Math.floor(Math.random() * 99)
-  }
-  randomizeNumber()
 
-  randomNumber.addEventListener('click', () => {
-    numberAction.innerText = randomizeNumber()
-  })
 })
