@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POA</title>
+  <title>POA Quiz</title>
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/test.css">
 </head>
 <body>
   <header class="site-header">
@@ -23,13 +24,13 @@
             <a class="navbar-link" href="index.html">Home</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#">POA</a>
+            <a class="navbar-link" href="poa.html">POA</a>
           </li>
           <li class="navbar-item">
             <a class="navbar-link" href="#">Location</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#">Test</a>
+            <a class="navbar-link navbar-link-dropdown" href="#">Test</a>
             <ul class="dropdown-menu">
               <li class="dropdown-item">
                 <a class="dropdown-link" href="visual-test.html">Visual watch</a>
@@ -63,41 +64,36 @@
       </button>
     </div>
   </header>
-  <div class="main-content">
-    <div class="container">
-      <div class="buttons">
-        <button class="person-button">00</button>
-        <button class="person-button">10</button>
-        <button class="person-button">20</button>
-        <button class="person-button">30</button>
-        <button class="person-button">40</button>
-        <button class="person-button">50</button>
-        <button class="person-button">60</button>
-        <button class="person-button">70</button>
-        <button class="person-button">80</button>
-        <button class="person-button">90</button>
-        <button class="person-button">All</button>
+  <div class="container">
+    <section class="quiz">
+      <div class="quiz-header">
+        <div class="category-numbers">
+          <button class="category-number">00</button>
+          <button class="category-number">10</button>
+          <button class="category-number">20</button>
+          <button class="category-number">30</button>
+          <button class="category-number">40</button>
+          <button class="category-number">50</button>
+          <button class="category-number">60</button>
+          <button class="category-number">70</button>
+          <button class="category-number">80</button>
+          <button class="category-number">90</button>
+        </div>
+        <h2 class="question">
+          <!-- <div class="random-number">00</div> -->
+        </h2>
       </div>
-      <section class="poa">
-        <h1 class="poa-title">My POA system</h1>
-        <ul class="card-list">
-          <!-- <li class="card-item">
-            <div class="card">00
-              <div class="front">
-                <img class="front-img" src="img/person/00.png" alt="" width="100" height="100">
-              </div>
-              <div class="back">
-                <img class="front-img" src="img/object/00.png" alt="" width="100" height="100">
-              </div>
-            </div>
+      <div class="quiz-body">
+        <ul class="quostion-list">
+          <!-- <li class="quostion-item">
+            <img class="question-img" src="img/person/00.png" alt="00" width="100" height="100">
           </li> -->
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   </div>
 
 
-  <script src="js/toggler.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/test.js"></script>
 </body>
 </html>
