@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POA</title>
+
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/newPoa.css">
+  <link rel="stylesheet" href="css/poa.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-container container">
+      <a class="site-logo" href="#">
+        <img class="site-header-logo" src="img/Logo.jpg" alt="Site logo" width="80" height="60">
+      </a>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a class="navbar-link" href="index.html">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">POA</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Location</a>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">Test</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="visual-test.html">Visual watch</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="test.html">Number And Person</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-link" href="#">Person And Action</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-item">
+            <a class="navbar-link" href="#">5 Minut Numbers</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="site-header-theme-toogler" type="button">
+        <span class="site-header-theme-toogler-inner">
+          <svg class="site-header-theme-toogler-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17"><path
+            fill="#fff"
+            fill-rule="evenodd"
+            stroke="currentColor"
+            stroke-width="1.25"
+            d="M12.553 11.815c-3.884 0-7.034-2.887-7.034-6.447 0-1.343.448-2.586 1.212-3.618C3.691 2.695 1.5 5.331 1.5 8.438c0 3.9 3.45 7.062 7.704 7.062 3.389 0 6.266-2.007 7.296-4.796a7.458 7.458 0 0 1-3.947 1.111Z"
+            clip-rule="evenodd"
+          /></svg>
+          <span class="site-header-theme-toogler-text">Dark mode</span>
+        </span>
+      </button>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="container">
+      <div class="buttons">
+        <button class="person-button">00</button>
+        <button class="person-button">10</button>
+        <button class="person-button">20</button>
+        <button class="person-button">30</button>
+        <button class="person-button">40</button>
+        <button class="person-button">50</button>
+        <button class="person-button">60</button>
+        <button class="person-button">70</button>
+        <button class="person-button">80</button>
+        <button class="person-button">90</button>
+      </div>
+      <section class="poa">
+        <h1 class="poa-title visually-hidden">My POA system</h1>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">00</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/00.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">01</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/01.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">02</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/02-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">03</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/03.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">04</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/04.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">05</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/05.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">06</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/06.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">07</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/07.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">08</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/08.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">09</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/09.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">10</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/10.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">11</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/11.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">12</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/12.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">13</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/13.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">14</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/14.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">15</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/15.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">16</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/16-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">17</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/17.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">18</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/18.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">19</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/19.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">20</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/20.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">21</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/21.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">22</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/22.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">23</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/23.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">24</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/24.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">25</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/25.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">26</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/26.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">27</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/27.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">28</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/28-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">29</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/29-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">30</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/30.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">31</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/31.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">32</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/32.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">33</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/33.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">34</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/34.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">35</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/35.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">36</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/36-4.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">37</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/37.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">38</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/38.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">39</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/39.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">40</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/40.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">41</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/41.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">42</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/42.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">43</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/43.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">44</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/44.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">45</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/45-4.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">46</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/46-2.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">47</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/47-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">48</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/48.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">49</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/49-1.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">50</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/50.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">51</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/51-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">52</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/52.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">53</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/53.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">54</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/54.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">55</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/55.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">56</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/56.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">57</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/57.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">58</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/58.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">59</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/59.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">60</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/60.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">61</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/61.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">62</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/62.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">63</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/63.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">64</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/64-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">65</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/65.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">66</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/66.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">67</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/67.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">68</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/68.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">69</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/69.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">70</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/70.jpeg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">71</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/71.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">72</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/72.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">73</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/73.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">74</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/74.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">75</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/75.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">76</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/76.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">77</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/77.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">78</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/78.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">79</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/79.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">80</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/80.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">81</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/81.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">82</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/82-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">83</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/83.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">84</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/84.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">85</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/85.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">86</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/86.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">87</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/87.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">88</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/88.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">89</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/89.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="person-card-list">
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">90</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/90.jpeg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">91</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/91.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">92</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/92.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">93</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/93-2.png" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">94</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/94.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">95</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/95.jpeg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">96</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/96.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">97</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/97.jpeg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">98</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/98.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="person-card-item">
+            <div class="person-card">
+              <div class="person-card__inner">
+                <div class="person-card__face card__face--front">99</div>
+                <div class="card__face card__face--back">
+                  <div class="card__content">
+                    <img class="person-img" src="img/personNew/99.jpg" alt="" width="160" height="240">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+  </div>
+
+
+  <script src="js/toggler.js"></script>
+  <!-- <script src="js/newPoa.js"></script> -->
+  <script src="js/poa.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+</html>

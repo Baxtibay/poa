@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   randomizeNumber()
 
-  randomNumber.addEventListener('click', () => {
-    numberAction.innerText = randomizeNumber()
-  })
+  // randomNumber.addEventListener('click', () => {
+  //   numberAction.innerText = randomizeNumber()
+  // })
 })
